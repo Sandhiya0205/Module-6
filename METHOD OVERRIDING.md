@@ -32,43 +32,41 @@ To write a Python program to create a Parent class `Bird` and inherit two child 
 ---
 
 ### PROGRAM
-
 ```
-Reg.No: 212223060239
-Name: SANDHIYA G
+# Reg.No: 212223060239
+# Name: SANDHIYA G
+class Bird:
+    def intro(self):
+        print("There are many types of birds.")
+	
+    def flight(self):
+        print("Most of the birds can fly but some cannot.")
 
-class India():
-    
-	def capital(self):
-		print("New Delhi is the capital of India.")
+class sparrow(Bird):
+    def intro(self):
+        print("Sparrows can fly.")
+	
+class ostrich(Bird):
+    def flight(self):
+        print("Ostriches cannot fly.")
+	
+obj_bird = Bird()
+obj_bird.intro()
+obj_bird.flight()
+obj_bird.intro()
+obj_spr=sparrow()
+obj_spr.intro()
+obj_bird.intro()
+obj_ost=ostrich()
+obj_ost.flight()
 
-	def language(self):
-		print("Hindi is the most widely spoken language of India.")
 
-	def type(self):
-		print("India is a developing country.")
-
-class USA():
-    
-	def capital(self):
-		print("Washington, D.C. is the capital of USA.")
-
-	def language(self):
-		print("English is the primary language of USA.")
-	def type(self):
-		print("USA is a developed country.")
-
-obj_ind = India()
-obj_usa = USA()
-
-for country in (obj_ind, obj_usa):
-    country.capital()
-    country.language()
-    country.type()
 ```
 
 ### OUTPUT
-<img width="1058" height="276" alt="image" src="https://github.com/user-attachments/assets/108dcec0-7fe0-4f29-9c4e-ca772d5d45b2" />
+![image](https://github.com/user-attachments/assets/881fcdf8-8aa4-4cc6-92a2-d90c40fa4599)
+
+
 
 ### RESULT
-Thus, the program to demonstrate polymorphism using two classes was executed successfully and the output was verified.
+Thus the python program to create a Parent class Bird and inherit two child classes has been implemented successfully.
