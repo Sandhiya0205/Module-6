@@ -34,11 +34,51 @@ To write a Python program to define the abstract base class named `Polygon` and 
 ### PROGRAM
 
 ```
+Reg.No: 212223060239
+Name: SANDHIYA G
 
+from abc import ABC, abstractmethod
+import math
+class type_shape(ABC): 
+    def area(self):
+        pass
+
+class Rectangle(type_shape):
+  length = 6
+  breadth = 4
+  def area(self):
+    return self.length * self.breadth
+
+class Circle(type_shape):
+  radius = 7
+  def area(self):
+      return 3.14*self.radius*self.radius
+
+class Square(type_shape):
+  length = 4
+  def area(self):
+      return 4*self.length
+  
+
+class triangle:
+  length = 5
+  width = 4
+  def area(self):
+      return 0.5*self.length*self.width
+      
+r = Rectangle() 
+c = Circle() 
+s = Square() 
+t = triangle() 
+print("Area of a rectangle:", r.area())
+print("Area of a circle:", c.area()) 
+print("Area of a square:", s.area()) 
+print("Area of a triangle:", t.area()) 
 
 ```
 
 ### OUTPUT
-
+<img width="644" height="224" alt="image" src="https://github.com/user-attachments/assets/eaa574b7-a846-4e7d-8162-82641da5b39a" />
 
 ### RESULT
+Thus, the Python program to implement an abstract base class with an abstract method and calculate the areas of different shapes was successfully executed and verified.
